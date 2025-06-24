@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem é esse Pokémon?</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>QUEM É ESSE POKÉMON?</h1>
+            <div class="game-info">
+                <span id="attempts">Tentativas: 0</span>
+                <span id="hints-used">Dicas: 0/5</span>
+            </div>
+        </header>
+
+        <main>
+            <div class="pokemon-display">
+                <div class="silhouette-container">
+                    <img id="pokemon-image" src="" alt="Quem é esse Pokémon?">
+                    <div id="reveal-name"></div>
+                </div>
+
+                <div class="input-area">
+                    <input type="text" id="guess-input" placeholder="Digite o nome do Pokémon..." autocomplete="off">
+                    <button id="submit-guess">Enviar</button>
+                </div>
+
+                <div class="hint-buttons">
+                    <button id="hint-type">Dica: Tipo</button>
+                    <button id="hint-habitat">Dica: Habitat</button>
+                    <button id="hint-height">Dica: Altura</button>
+                    <button id="hint-weight">Dica: Peso</button>
+                    <button id="hint-gen">Dica: Geração</button>
+                </div>
+
+                <div class="hints-display">
+                    <div class="hint" id="hint-types">
+                        <span class="hint-label">Tipo:</span>
+                        <span class="hint-value">????</span>
+                    </div>
+                    <div class="hint" id="hint-habitat">
+                        <span class="hint-label">Habitat:</span>
+                        <span class="hint-value">????</span>
+                    </div>
+                    <div class="hint" id="hint-height">
+                        <span class="hint-label">Altura:</span>
+                        <span class="hint-value">????</span>
+                    </div>
+                    <div class="hint" id="hint-weight">
+                        <span class="hint-label">Peso:</span>
+                        <span class="hint-value">????</span>
+                    </div>
+                    <div class="hint" id="hint-generation">
+                        <span class="hint-label">Geração:</span>
+                        <span class="hint-value">????</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="result-message" id="result-message"></div>
+        </main>
+
+        <footer>
+            <button id="new-game">Novo Pokémon</button>
+            <span class="credits">Dados da <a href="https://pokeapi.co/" target="_blank">PokeAPI</a></span>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
